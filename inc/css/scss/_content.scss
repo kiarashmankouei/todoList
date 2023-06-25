@@ -1,0 +1,94 @@
+body {
+    background-color: #4b4b4bed;
+    direction: ltr;
+
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+        font-weight: bold;
+        font-size: 20px;
+        color: #f1f2f6;
+    }
+
+    .main {
+        position: relative;
+        background-color: #cd84f1;
+        width: 700px;
+        min-height: 120px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h2 {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .add-task {
+            text-align: center;
+            margin-bottom: 20px;
+
+            .submit-task {
+                width: 55px;
+                height: 30px;
+                flex-shrink: 0;
+                border: none;
+                color: #272727;
+                border-radius: 50%;
+
+            }
+        }
+
+
+
+
+
+        .task-list {
+            .task-list-item {
+                background-color: #7158e2;
+                width: 375px;
+                padding: 15px;
+                border-radius: 35px;
+                margin: 0 auto;
+                margin-bottom: 12px;
+
+                input {
+                    width: 16px;
+                    height: 16px;
+
+                }
+
+            }
+
+            .task-list-item input:checked+span {
+                color: red;
+                text-decoration: line-through;
+            }
+
+            .delete-btn {
+                float: right;
+                padding-right: 20px;
+                display: block;
+                width: 16px;
+                height: 16px;
+                background-image: url(../trash3-fill.svg);
+                background-repeat: no-repeat;
+                background-size: 16px;
+                background-position: center;
+                cursor: pointer;
+
+                :hover {
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+
+
+    }
+
+
+}
